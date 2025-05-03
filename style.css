@@ -1,22 +1,33 @@
-.container{
-    border: 2px solid black;
+body {
+    background-color: hsl(233, 36%, 18%);
+    font-family: Arial, sans-serif;
+    color: white;
     padding: 20px;
-    margin: 10px;
+  }
+
+  .grid-container {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr ;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
     gap: 20px;
-    
-}
+    width: 1000px;
+    height: 500px;
+    margin: auto;
+  }
 
-.children{
-    border: 3px solid green;
-    height: 100px ;
-}
+  .grid-item {
+    border-radius: 5px;
+  }
 
-#children-1{
-    grid-column: 1/3;
-}
-#children-3{
-    grid-row: 2/4;
-}
+  .green { background-color: hsl(122, 39%, 49%); }
+  .red { background-color: hsl(4, 90%, 58%); }
+  .orange { background-color: hsl(42, 100%, 50%); }
 
+  /* Optional: Just for visual effect */
+  .title {
+    text-align: center;
+    font-size: 2em;
+    font-weight: bold;
+    margin-top: 30px;
+    font-family: "Georgia", serif;
+  }
